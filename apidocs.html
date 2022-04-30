@@ -25,29 +25,29 @@
     <!-- the website's title -->
     <h1 class="opensans">Password Generator</h1>
     <h2 class="ubuntu">easy to use, fast and available for all devices and platforms</h2>
-
-
-    <!-- Entering all required information and then sending it to "passwordgenerator.php" -->
+    <br>
+    <h2 class="opensans">API Docs</h2>
+    <p class="roboto">If you want to use my password generator API, you have to do it like this: </p>
+    <p class="assistant_big"><b>POST api.php [len] [qua] [son]</b></p>
     <div class="roboto">
-        <form action="passwordgenerator.php" method="post">
-            Length of the passwords: <input class="siteDesign" type="text" name="length" value=12> Zeichen<br>
-            <br> Password quanity: <input class="siteDesign" type="text" name="quanity" value=1><br>
-            <br>
-            <!-- <input type="checkbox" name="num" value="numY" checked="checked"> Zahlen verwenden<br> -->
-            <input type="checkbox" name="son" value="sonY" checked="checked">Use special characters (!$%&/\()=?{[]})<br>
-            <br>
-            <input class="genButton" type="submit" name="send" value="Generate password">
-        </form>
-    </div>
-    <!-- specification of the programming languages used for this and their logos -->
-    <p class="roboto">For this website, PHP and HTML were used.
-        <p>
-            <br><br>
-            <!-- pictures -->
-            <img class="ohpimg2" src="php-logo.png"></img>
-            <img class="ohpimg1" src="html-logo.png"></img>
-            <br><br><br><br><br>
-            <a href="apidocs.html">API Docs</a>
-</body>
+        <h3>Parameters</h3>
+        <table>
+            <tr>
+                <th>Parameters&nbsp;</th>
+                <th>Meaning</th>
+            </tr>
+            <tr>
+                <td>len</td>
+                <td>The parameter "len" specifies the length of the password<br>The value must be any number greater than 1.<br><br></td>
+            </tr>
+            <tr>
+                <td>qua</td>
+                <td>The parameter "qua", short for quanity, means the number of passwords.<br>The value must be any number greater than 1.<br><br></td>
+            </tr>
+            <tr>
+                <td>son</td>
+                <td>The parameter "son" specifies, if there will be special characters in the password.<br>The value can be a 0 (do not use special characters) or a 1 (use special characters).<br><br></td>
 
-</html>
+            </tr>
+        </table>
+    </div>
