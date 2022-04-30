@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>генератор паролей</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="siteDesign">
+    <!-- Titel der Webseite -->
+    <h1 class="opensans">Генератор паролей</h1>
+    <h2 class="ubuntu">Простой в использовании, быстрый и подходящий для всех устройств генератор паролей!</h2>
+    <br>
+    <h2 class="opensans">Документация по API</h2>
+    <p class="roboto">Если вы хотите использовать API генератора паролей, вам необходимо сделать следующее: </p>
+    <p class="assistant_big"><b>POST api.php [len] [qua] [son]</b></p>
+    <div class="roboto">
+        <h3>Параметр</h3>
+        <table>
+            <tr>
+                <th>Параметр&nbsp;</th>
+                <th>значение</th>
+            </tr>
+            <tr>
+                <td>len</td>
+                <td>Параметр "len" указывает длину пароля. Значение может быть любым числом без десятичных знаков, которое больше 1.<br><br></td>
+            </tr>
+            <tr>
+                <td>qua</td>
+                <td>Параметр qua (сокращение от quanity) обозначает количество паролей.<br>Значением может быть любое число без десятичных знаков, превышающее 1.<br><br></td>
+            </tr>
+            <tr>
+                <td>son</td>
+                <td>Параметр "сын", сокращение от специальных символов, указывает, следует ли использовать специальные символы.<br>Значение может быть либо 0 (не использовать специальные символы), либо 1 (использовать специальные символы).<br><br></td>
+
+            </tr>
+        </table>
+    </div>
