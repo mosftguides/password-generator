@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwortgenerator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="siteDesign">
+    <!-- the website's title -->
+    <h1 class="opensans">Password Generator</h1>
+    <h2 class="ubuntu">easy to use, fast and available for all devices and platforms</h2>
+
+
+    <!-- Entering all required information and then sending it to "passwordgenerator.php" -->
+    <div class="roboto">
+        <form action="passwordgenerator.php" method="post">
+            Length of the passwords: <input class="siteDesign" type="text" name="length" value=12> Zeichen<br>
+            <br> Password quanity: <input class="siteDesign" type="text" name="quanity" value=1><br>
+            <br>
+            <!-- <input type="checkbox" name="num" value="numY" checked="checked"> Zahlen verwenden<br> -->
+            <input type="checkbox" name="son" value="sonY" checked="checked">Use special characters (!$%&/\()=?{[]})<br>
+            <br>
+            <input class="genButton" type="submit" name="send" value="Generate password">
+        </form>
+    </div>
+    <!-- specification of the programming languages used for this and their logos -->
+    <p class="roboto">For this website, PHP and HTML were used.
+        <p>
+            <br><br>
+            <!-- pictures -->
+            <img class="ohpimg2" src="php-logo.png"></img>
+            <img class="ohpimg1" src="html-logo.png"></img>
+            <br><br><br><br><br>
+            <a href="apidocs.html">API Docs</a>
+</body>
+
+</html>
